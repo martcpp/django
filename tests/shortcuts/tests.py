@@ -35,3 +35,5 @@ class RenderTests(SimpleTestCase):
         self.assertEqual(response.content, b"DTL\n")
         response = self.client.get("/render/using/?using=jinja2")
         self.assertEqual(response.content, b"Jinja2\n")
+
+
